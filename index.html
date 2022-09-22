@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML</title>
+    <link rel="icon" type="image/x-icon" href="mikax.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1 id="header">Ini Header</h1>
+    </header>
+    <div class="main">
+        <div class="main header">
+            <p id="pertama">Ini Paragraph<br>HTML Pertama tanpa CSS<br>Materi urut sesuai W3Schools</p>
+
+            <p id="bold"><b>Paragraph Bold</b></p>
+            <p id="italic"><i>Paragraph Italic</i></p>
+        </div>
+        <!-- Ini Comment -->
+
+        <div class="link-w3">
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank">Ini link menuju website W3Schools</a>
+        </div>
+        
+        <!-- B O O K M A R K -->
+        <div class="bookmark">
+            <h2 class="judul">Bookmark</h2>
+            <p><a href="#header">Loncat ke Header</a></p>
+            <p><a href="#pertama">Loncat ke Paragraph Pertama</a></p>
+            <p><a href="#image">Loncat ke Image</a></p>
+            <p><a href="#image-map">Loncat ke Image Map</a></p>
+            <p><a href="#table">Loncat ke Table</a></p>
+            <p><a href="#list">Loncat ke List</a></p>
+            <p><a href="#iframe">Loncat ke Iframe</a></p>
+            <p><a href="#form">Loncat ke Form</a></p>
+        </div>
+
+        <!-- I M A G E -->
+        <h2 id="image" class="judul">Image</h2>
+        <img src="mikax.png" width="100px" height="100px" class="gambar">
+        
+        <h3 id="image-map">Image Map</h4>
+        <p>Pencet Bukunya!!!</p>
+        <img src="atsuko reading.png" usemap="#atsuko-map">
+        <map name="atsuko-map">
+            <area shape="poly" coords="35,217,17,200,8,156,18,156,33,171,70,158,75,165,83,208,46,218" href="https://bluearchive.wiki/wiki/Main_Page" target="_blank" alt="Atsuko Reading">
+        </map>
+
+        <!-- T A B L E -->
+        <h2 id="table" class="judul">Table</h2>
+        <table>
+            <caption>Table Caption</caption>
+            <tr>
+                <th>No.</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Galih Aditya</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Agus Sumantris</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Bagus Fernando</td>
+                <td>4</td>
+            </tr>
+        </table>
+
+        <!-- L I S T -->
+        <h2 id="list" class="judul">List</h2>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Ayam</li>
+                <ul>
+                    <li>Jantan</li>
+                    <li>Jago</li>
+                </ul>
+            <li>Kucing</li>
+            <li>Anjing</li>
+        </ul>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Ayam</li>
+                <ol>
+                    <li>Jantan</li>
+                    <li>Jago</li>
+                </ol>
+            <li>Kucing</li>
+            <li>Anjing</li>
+        </ol>
+        <h3>Description List</h3>
+        <dl>
+            <dt>Ayam</dt>
+                <dd>-Ayam itu bertelur</dd>
+                <dd>-Ayam itu berkokok</dd>
+            <dt>Kucing</dt>
+                <dd>-Kucing itu beranak</dd>
+                <dd>-Kucing itu mengeong</dd>
+        </dl>
+
+        <!-- I F R A M E -->
+        <h2 id="iframe" class="judul">Iframe</h2>
+        <iframe src="" name="wikiba" title="wiki blue archive"></iframe>
+        <p><a href="https://bluearchive.wiki/wiki/Main_Page" target="wikiba">Wiki Blue Archive</a></p>
+
+        <!-- F O R M -->
+        <h2 id="form" class="judul">Form</h2>
+        <form>
+            <fieldset>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" value=""><br>
+
+            <label for="orang">Untuk berapa orang?</label>
+            <input type="number" id="orang" name="orang" min="1" max="4">
+
+            <p>Pilih meja:</p>
+            <input type="radio" id="meja1" name="meja" value="Meja1">
+            <label for="meja1">Meja 1</label>
+            <input type="radio" id="meja2" name="meja" value="Meja2">
+            <label for="meja2">Meja 2</label>
+            <input type="radio" id="meja3" name="meja" value="Meja2">
+            <label for="meja3">Meja 3</label>
+
+            <p>Pilih menu:</p>
+            <input type="checkbox" id="ayam">
+            <label for="ayam">Ayam</label>
+            <input type="checkbox" id="kucing">
+            <label for="kucing">Kucing</label>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
